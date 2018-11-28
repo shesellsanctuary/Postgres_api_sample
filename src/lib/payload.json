@@ -1,0 +1,59 @@
+{
+    "usage": [
+      {      
+        "id" : "27d29796-3eb6-4749-90a4-016a4ae3678b",
+        "timestamp": "2018-01-02T00:38:46.339",
+        "service": {
+          "id": "my-service",
+          "plan": "small"
+        },
+        "consumer": {
+          "platform": "CF",
+          "region": "cf-us10",
+          "org": "xxx-yyy-zzz-org-unique-guid",
+          "space": "xxx-yyy-zzz-space-unique-guid",
+          "user": "346c6b76bebdd4b9dd0ss12AaAa6441adf4bd250"
+        },
+        "measures": [
+          {
+            "id": "instances",
+            "value": 1
+          },
+          {
+            "id": "storage",
+            "value": 123456
+          }
+        ]
+      },
+      {
+        "timestamp": "2018-01-02T16:38:46.339",
+        "service": {
+          "id": "hana-db",
+          "plan": "x-large"
+        },
+        "conumer": {
+          "platform": "CF",
+          "region": "cf-us10",
+          "org": "xxx-yyy-zzz-other-org-unique-guid",
+          "space": "xxx-yyy-zzz-other-space-unique-guid",
+          "instance": "some-instance-id-which-consumed-hanadb-instance"
+        },
+        "measures": [
+          {
+            "id": "storage_gb",
+            "value": 432125
+          }
+        ],
+        "customDimensions": [
+          {
+            "id": "hana-version",
+            "value": "1122.32.1212"
+          },
+          {
+            "id": "db-alias",
+            "value": "XYZ"
+          }
+        ]
+      }
+    ]
+  }

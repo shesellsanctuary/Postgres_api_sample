@@ -1,0 +1,42 @@
+{
+  "name": "metering-service",
+  "version": "1.0.0",
+  "description": "Metering service - IoT",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "dependencies": {
+    "@sap/xsenv": "^1.2.9",
+    "express": "^4.16.4",
+    "pg": "^7.6.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "system-sleep": "^1.3.6",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start-dev": "node-dev lib/index.js",
+    "start": "node lib/db/index.js",
+    "startGenerator": "node lib/index.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "grunt": "^1.0.3",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-sonar-runner": "^2.4.8",
+    "gruntify-eslint": "^5.0.0",
+    "husky": "^1.1.2",
+    "istanbul": "^1.1.0-alpha.1",
+    "liquibase": "0.0.3",
+    "mock-require": "^3.0.2",
+    "node-dev": "^3.1.3",
+    "node-mocks-http": "^1.7.0",
+    "rewire": "^4.0.1",
+    "sinon": "^6.3.3",
+    "tap-junit": "^2.1.0",
+    "tape": "^4.9.1"
+  }
+}

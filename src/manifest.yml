@@ -1,0 +1,5 @@
+applications:
+  - name: i860624-metering-writer-sample
+    memory: 128M
+services:
+  - i860624
